@@ -1,4 +1,78 @@
-# 3D Cell Assembly Simulation with Acoustic Forces
+# Brain Cancer 3D Microgravity Modeller with Acoustic Forces
+
+# Project Purpose and Scientific Objective
+
+## The problem this project addresses
+
+Glioblastoma (GBM) is an extremely aggressive brain cancer with very limited
+treatment options, principally surgery and chemotherapy. The supplied project
+brief describes GBM as affecting approximately 3.19 people per 100,000
+worldwide, representing around 32% of primary brain tumours, with an average
+mortality period of approximately 12-18 months. These figures should be
+checked against the specific epidemiological source used in any publication
+or presentation.
+
+Drug discovery is hindered by the gap between laboratory models and patient
+tumours. Standard 2D cultures grow GBM cells flat on plastic. That geometry
+can silence or alter the drug-resistance and invasion programmes that make GBM
+lethal, so a drug that appears effective in a dish may fail repeatedly in
+patients.
+
+## Why 3D culture and microgravity matter
+
+Three-dimensional culture allows cells to form structures more like those in
+the brain. It can restore more complex cell organization, allow a hypoxic
+core to develop, and prevent cells from simply adhering to a flat plate. These
+properties can increase tumour-like behaviour, tumourigenicity, and invasion,
+which helps explain why results from 2D drug testing often translate poorly to
+clinical trials.
+
+Ground-based 3D cultures still experience gravity. Spheroids can settle,
+disaggregate, and develop inconsistent morphologies. The project concept is
+that microgravity removes this gravity-driven settling artefact, potentially
+supporting more uniform and reproducible organoids, larger and more complex
+spheroids, and a more faithful spatial arrangement of tumour cells. The
+intended model is one that better preserves tumour architecture, hypoxia
+gradients, cell-cell interactions, immune context, and aggressive molecular
+signatures. These are scientific motivations for the design; this repository's
+simulation does not itself create a microgravity environment or validate gene
+expression and immune fidelity.
+
+## Why cymatics and acoustic manipulation matter
+
+Cymatics uses sound fields to create organized pressure and radiation-force
+patterns. A transducer phase array is an electronically controlled collection
+of sound emitters. By changing the phase and amplitude of the emitters, the
+array can create acoustic traps at chosen positions.
+
+This makes acoustic manipulation precise and contactless: particles can be
+moved without a mechanical probe. In a future biological rig, the pressure
+field could be designed to control the location, shape, and cell-cell pressure
+of a tumouroid. In this repository, those ideas are represented by simulated
+particles, acoustic focal points, and simplified cell-cell interaction rules.
+
+## Proposed application and rig concept
+
+The broader Wav.io concept is a brain-cancer microgravity modeller: a
+purpose-fit functional test rig combining a 3D GBM culture environment with
+acoustic positioning. A possible workflow is to form tumour spheroids in a
+hydrogel, transport the culture to a microgravity environment, introduce a
+tailored growth medium, and use acoustic pressure gradients to aggregate or
+position the floating spheroids into a tumouroid that can be observed and
+tested.
+
+The proposed rig concept includes a spherical transducer arrangement, optical
+access for imaging and treatment tracking, fluid or hydrogel injection ports,
+and sealed pneumatic dosing. A feedback controller could use real-time
+observations to optimize the acoustic parameters. The exact rig dimensions,
+frequency, number of transducers, and control algorithm are design parameters
+for the hardware and future application; they are not all implemented by this
+particle simulation.
+
+The intended impact is a more uniform and reproducible GBM model, improved
+drug-efficacy evaluation, and faster therapeutic screening. Microgravity and
+acoustic levitation are complementary: microgravity supplies the biological
+context, while acoustic forces provide controllable positioning and assembly.
 
 ## Overview
 
@@ -91,88 +165,7 @@ This keeps motion stable regardless of force magnitude.
 | `assembly_metrics.png` | Cluster count, assembly %, largest cluster vs step |
 | `final_comparison.png` | 2×2 comparison grid of all experiments |
 
-## Dependencies
-
-- AcousTools (+ PyTorch)
-- NumPy, SciPy
-- vedo (+ VTK)
-- Matplotlib, Pillow
-
 ---
-
-# Project Purpose and Scientific Objective
-
-## The problem this project addresses
-
-Glioblastoma (GBM) is an extremely aggressive brain cancer with very limited
-treatment options, principally surgery and chemotherapy. The supplied project
-brief describes GBM as affecting approximately 3.19 people per 100,000
-worldwide, representing around 32% of primary brain tumours, with an average
-mortality period of approximately 12-18 months. These figures should be
-checked against the specific epidemiological source used in any publication
-or presentation.
-
-Drug discovery is hindered by the gap between laboratory models and patient
-tumours. Standard 2D cultures grow GBM cells flat on plastic. That geometry
-can silence or alter the drug-resistance and invasion programmes that make GBM
-lethal, so a drug that appears effective in a dish may fail repeatedly in
-patients.
-
-## Why 3D culture and microgravity matter
-
-Three-dimensional culture allows cells to form structures more like those in
-the brain. It can restore more complex cell organization, allow a hypoxic
-core to develop, and prevent cells from simply adhering to a flat plate. These
-properties can increase tumour-like behaviour, tumourigenicity, and invasion,
-which helps explain why results from 2D drug testing often translate poorly to
-clinical trials.
-
-Ground-based 3D cultures still experience gravity. Spheroids can settle,
-disaggregate, and develop inconsistent morphologies. The project concept is
-that microgravity removes this gravity-driven settling artefact, potentially
-supporting more uniform and reproducible organoids, larger and more complex
-spheroids, and a more faithful spatial arrangement of tumour cells. The
-intended model is one that better preserves tumour architecture, hypoxia
-gradients, cell-cell interactions, immune context, and aggressive molecular
-signatures. These are scientific motivations for the design; this repository's
-simulation does not itself create a microgravity environment or validate gene
-expression and immune fidelity.
-
-## Why cymatics and acoustic manipulation matter
-
-Cymatics uses sound fields to create organized pressure and radiation-force
-patterns. A transducer phase array is an electronically controlled collection
-of sound emitters. By changing the phase and amplitude of the emitters, the
-array can create acoustic traps at chosen positions.
-
-This makes acoustic manipulation precise and contactless: particles can be
-moved without a mechanical probe. In a future biological rig, the pressure
-field could be designed to control the location, shape, and cell-cell pressure
-of a tumouroid. In this repository, those ideas are represented by simulated
-particles, acoustic focal points, and simplified cell-cell interaction rules.
-
-## Proposed application and rig concept
-
-The broader Wav.io concept is a brain-cancer microgravity modeller: a
-purpose-fit functional test rig combining a 3D GBM culture environment with
-acoustic positioning. A possible workflow is to form tumour spheroids in a
-hydrogel, transport the culture to a microgravity environment, introduce a
-tailored growth medium, and use acoustic pressure gradients to aggregate or
-position the floating spheroids into a tumouroid that can be observed and
-tested.
-
-The proposed rig concept includes a spherical transducer arrangement, optical
-access for imaging and treatment tracking, fluid or hydrogel injection ports,
-and sealed pneumatic dosing. A feedback controller could use real-time
-observations to optimize the acoustic parameters. The exact rig dimensions,
-frequency, number of transducers, and control algorithm are design parameters
-for the hardware and future application; they are not all implemented by this
-particle simulation.
-
-The intended impact is a more uniform and reproducible GBM model, improved
-drug-efficacy evaluation, and faster therapeutic screening. Microgravity and
-acoustic levitation are complementary: microgravity supplies the biological
-context, while acoustic forces provide controllable positioning and assembly.
 
 # What the Code Does
 
@@ -388,7 +381,7 @@ as `1_standing_wave_animation.gif`. It also writes `assembly_metrics.png` and
 `final_comparison.png`. If Vedo cannot render, the final-state image falls back
 to matplotlib.
 
-# Dependencies Explained
+# Tools Used
 
 ## Required Python packages
 
