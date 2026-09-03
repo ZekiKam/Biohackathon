@@ -1,0 +1,15 @@
+# Core numerical stack
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+tqdm>=4.65
+
+# k-Wave Python port (full wave equation solver)
+# Installs pure-Python 2-D/3-D wave propagation + wraps C++ k-Wave binaries for 3-D speed
+k-wave-python>=0.3.3
+
+# 3-D visualisation (Python-side; ParaView is installed separately)
+pyvista>=0.42
+
+# HDF5 I/O (k-Wave uses HDF5 internally)
+h5py>=3.8
