@@ -120,6 +120,9 @@ Output images → `output_v2/`
 - Rod score: measures how elongated the particles are using PCA (1.0: particles are arranged almost along one straight line)
 - Sphere score: measures how similarly distant particles are from the arrangement’s center (1.0: particles lie at nearly the same radius, like a spherical shell)
 
+**Why we have rod and sphere scores**
+ This project focuses on two tissue geometries: rod-like vessel structure and spheroid tumouroid. They are achieved by designing the trap pattern.
+  
 | # | Configuration | Assembly | Largest Cluster | Rod Score | Sphere Score |
 |---|---|---|---|---|---|
 | 1 | Standing wave (all transducers in phase) | 24 % | 3 / 50 | 0.427 |0.636 |
