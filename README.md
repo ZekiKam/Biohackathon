@@ -1,4 +1,4 @@
-# Brain Cancer 3D Microgravity Modeller with Acoustic Forces
+# Glioblastoma Acoustic Assembly Simulator
 
 ## Project Purpose
 
@@ -394,8 +394,6 @@ to matplotlib.
 
 ## Required Python packages
 
-- **Python 3**: Runs the simulation, command-line driver, numerical code, and
-    file generation.
 - **PyTorch**: Stores transducer activations and positions as tensors and is
     used by AcousTools for differentiable acoustic-field calculations.
 - **AcousTools**: Supplies the transducer board, weighted Gerchberg-Saxton
