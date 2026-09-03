@@ -74,11 +74,11 @@ context, while acoustic forces provide controllable positioning and assembly.
 
 ## Overview
 
-Simulates how **ultrasonic transducer arrays** drive **cell assembly into
-tissue-like structures** using analytical acoustic radiation forces computed by
+Simulates how ultrasonic transducer arrays drive cell assembly into
+tissue-like structures using analytical acoustic radiation forces computed by
 [AcousTools](https://github.com/BristolMyersSquibb/acoustools)
 
-It models:
+**It models:**
 - Particles/cells moving in a 3D volume
 - Acoustic radiation forces calculated with AcousTools’ Gor’kov-force model
 - Overdamped motion, where particles move step-by-step in the direction of the net force
@@ -87,9 +87,18 @@ It models:
 - Shape and assembly measurements, including cluster count, largest cluster, assembly fraction, rod score, and sphere score
 - Visualization, through static 3D plots, timelapses, and 16-second GIF animations.
   
-<b>Disclaimer:</b> It is a simplified computational model, not a complete biological tumor model. It does not simulate actual GBM biology, cell growth, gene expression, immune cells, fluid dynamics, drug response, or real microgravity. Its main purpose is to test whether designed acoustic fields could position and assemble particles into useful 3D geometries such as clusters, rods, or spherical structures.
+**Disclaimer:** 
 
-Uses analytical Gor'kov forces via `compute_force()` + sticky-particle merge model.
+This simulator models acoustic forces only, with simplified particle interactions. It does not currently model microgravity. 
+The particles move according to:
+- Acoustic radiation forces from AcousTools
+- Optional Lennard-Jones attraction/repulsion
+- Cluster merging when particles are close enough
+Microgravity is currently part of the project’s scientific motivation and proposed application, but not part of the implemented simulation physics. The current code effectively assumes gravity is absent or ignored, rather than explicitly simulating microgravity.
+
+
+
+It is a simplified computational model, not a complete biological tumor model. It does not simulate actual GBM biology, cell growth, gene expression, immune cells, fluid dynamics, drug response, or real microgravity. Its main purpose is to test whether designed acoustic fields could position and assemble particles into useful 3D geometries such as clusters, rods, or spherical structures.
 
 ## Quick Start
 
