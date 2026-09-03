@@ -1,8 +1,6 @@
 # Brain Cancer 3D Microgravity Modeller with Acoustic Forces
 
-# Project Purpose and Scientific Objective
-
-## The problem this project addresses
+## Project Purpose
 
 Glioblastoma (GBM) is an extremely aggressive brain cancer with very limited
 treatment options, principally surgery and chemotherapy. The supplied project
