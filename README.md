@@ -1,4 +1,4 @@
-# Glioblastoma Acoustic Assembly Simulator
+# Brain Cancer Acoustic Assembly Simulator
 
 ## Project Purpose
 
