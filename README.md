@@ -94,9 +94,8 @@ The particles move according to:
 - Acoustic radiation forces from AcousTools
 - Optional Lennard-Jones attraction/repulsion
 - Cluster merging when particles are close enough
+  
 Microgravity is currently part of the project’s scientific motivation and proposed application, but not part of the implemented simulation physics. The current code effectively assumes gravity is absent or ignored, rather than explicitly simulating microgravity.
-
-
 
 It is a simplified computational model, not a complete biological tumor model. It does not simulate actual GBM biology, cell growth, gene expression, immune cells, fluid dynamics, drug response, or real microgravity. Its main purpose is to test whether designed acoustic fields could position and assemble particles into useful 3D geometries such as clusters, rods, or spherical structures.
 
