@@ -87,7 +87,7 @@ It models:
 - Shape and assembly measurements, including cluster count, largest cluster, assembly fraction, rod score, and sphere score
 - Visualization, through static 3D plots, timelapses, and 16-second GIF animations.
   
-<b>Disclaimer:<b/> It is a simplified computational model, not a complete biological tumor model. It does not simulate actual GBM biology, cell growth, gene expression, immune cells, fluid dynamics, drug response, or real microgravity. Its main purpose is to test whether designed acoustic fields could position and assemble particles into useful 3D geometries such as clusters, rods, or spherical structures.
+<b>Disclaimer:</b> It is a simplified computational model, not a complete biological tumor model. It does not simulate actual GBM biology, cell growth, gene expression, immune cells, fluid dynamics, drug response, or real microgravity. Its main purpose is to test whether designed acoustic fields could position and assemble particles into useful 3D geometries such as clusters, rods, or spherical structures.
 
 Uses analytical Gor'kov forces via `compute_force()` + sticky-particle merge model.
 
