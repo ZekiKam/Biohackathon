@@ -76,7 +76,18 @@ context, while acoustic forces provide controllable positioning and assembly.
 
 Simulates how **ultrasonic transducer arrays** drive **cell assembly into
 tissue-like structures** using analytical acoustic radiation forces computed by
-[AcousTools](https://github.com/BristolMyersSquibb/acoustools).
+[AcousTools](https://github.com/BristolMyersSquibb/acoustools)
+
+It models:
+- Particles/cells moving in a 3D volume
+- Acoustic radiation forces calculated with AcousTools’ Gor’kov-force model
+- Overdamped motion, where particles move step-by-step in the direction of the net force
+- Short-range cell interaction, using optional Lennard-Jones attraction and repulsion
+- Permanent fusion, where particles closer than merge_distance become one cluster
+- Shape and assembly measurements, including cluster count, largest cluster, assembly fraction, rod score, and sphere score
+- Visualization, through static 3D plots, timelapses, and 16-second GIF animations.
+  
+<b>Disclaimer:<b/> It is a simplified computational model, not a complete biological tumor model. It does not simulate actual GBM biology, cell growth, gene expression, immune cells, fluid dynamics, drug response, or real microgravity. Its main purpose is to test whether designed acoustic fields could position and assemble particles into useful 3D geometries such as clusters, rods, or spherical structures.
 
 Uses analytical Gor'kov forces via `compute_force()` + sticky-particle merge model.
 
