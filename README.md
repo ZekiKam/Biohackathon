@@ -43,6 +43,8 @@ patterns. A transducer phase array is an electronically controlled collection
 of sound emitters. By changing the phase and amplitude of the emitters, the
 array can create acoustic traps at chosen positions.
 
+Acoustic trap: a point in space where sound waves from the transducer array combine to create a stable "pocket" that holds a particle in place — like a 3D indentation in a pressure field. The array does this by controlling the phase and amplitude of each individual transducer so their sound waves interfere constructively at chosen coordinates, pulling nearby particles toward that point (via the Gor'kov force) and holding them there, similar to acoustic levitation.
+
 This makes acoustic manipulation precise and contactless: particles can be
 moved without a mechanical probe. In a future biological rig, the pressure
 field could be designed to control the location, shape, and cell-cell pressure
