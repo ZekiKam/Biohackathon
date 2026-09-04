@@ -47,9 +47,9 @@ Acoustic trap: a point in space where sound waves from the transducer array comb
 
 This makes acoustic manipulation precise and contactless: particles can be
 moved without a mechanical probe. In a future biological rig, the pressure
-field could be designed to control the location, shape, and cell-cell pressure
-of a tumouroid. In this repository, those ideas are represented by simulated
-particles, acoustic focal points, and simplified cell-cell interaction rules.
+field could be designed to control the location, shape, and cell-cell pressure of a tumouroid. In this repository, those ideas are represented by simulated particles, acoustic focal points, and simplified cell-cell interaction rules.
+
+Acoustics fits the microgravity concept because removing gravity removes the only thing normally holding cells in place — without it, cells would just drift with nothing to organize them. Acoustic radiation force is contactless, can shape many particles at once in full 3D, and doesn't rely on gravity to work, making it a natural replacement positioning system. So the pairing is deliberate: microgravity gives an undisturbed biological environment free of gravity-driven settling, while acoustics gives you a way to still control where cells end up once gravity is no longer doing that job.
 
 ## Proposed application and rig concept
 
