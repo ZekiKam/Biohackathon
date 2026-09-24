@@ -6,9 +6,7 @@ Glioblastoma (GBM) is an extremely aggressive brain cancer with very limited
 treatment options, principally surgery and chemotherapy. The supplied project
 brief describes GBM as affecting approximately 3.19 people per 100,000
 worldwide, representing around 32% of primary brain tumours, with an average
-mortality period of approximately 12-18 months. These figures should be
-checked against the specific epidemiological source used in any publication
-or presentation.
+mortality period of approximately 12-18 months.
 
 Drug discovery is hindered by the gap between laboratory models and patient
 tumours. Standard 2D cultures grow GBM cells flat on plastic. That geometry
